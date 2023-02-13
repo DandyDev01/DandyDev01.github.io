@@ -80,7 +80,7 @@ ul {
   }
 
   #contact {
-    justify-content: right;
+    float: right;
   }
 
 
