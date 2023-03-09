@@ -19,4 +19,9 @@ $(document).ready(function(){
             $("#overlay-img").attr("src", src);
         }
     });  
+
+    $("#close-button").on("click", function() {
+        $("#overlay").addClass("disable");
+        $("#overlay").removeClass("enable");
+    });
 });
