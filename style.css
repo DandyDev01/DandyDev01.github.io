@@ -181,3 +181,29 @@ li#contact {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+@media screen and (max-width: 600px) {
+  #menu li:not(:first-child) {display: none;}
+  #menu li.icon {
+    float: right;
+    display: block;
+  }
+
+  .content-right {
+    position: relative;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #menu.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
