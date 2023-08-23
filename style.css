@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(26, 25, 25, 0.966);
+    background-color: rgba(65, 63, 63, 0.966);
   }
   
 img {
@@ -124,6 +124,17 @@ li#contact {
     display: block;
   }
 
+  .Title {
+    font-size: 50px;
+    text-align: center;
+    color: dodgerblue;
+    padding-bottom: 20px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
   .content {
      background-color: #333;
      color: white;
@@ -131,6 +142,7 @@ li#contact {
      margin-left: 20%;
      margin-right: 20%;
      margin-top: 5%;
+     border-radius: 5px;
   }
 
   .content-right {
@@ -143,6 +155,22 @@ li#contact {
     max-width: 16%;
     overflow-y: scroll;
   }
+
+.status-paused {
+  color: darkorange;
+}
+
+.status-canceled {
+  color: red;
+}
+
+.status-working {
+  color: greenyellow;
+}
+
+.status-complete {
+  color: dodgerblue;
+}
 
 .img-container {
   margin-top: 5%;
