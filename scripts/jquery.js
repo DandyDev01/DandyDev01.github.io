@@ -27,36 +27,11 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#next").on("click", function() {
-    var src = $(this).attr("src");
-    var index = 0;
-    $(".img-container").children().each(function () {  
-      if($(this).attr("src") == $("#overlay-img").attr("src")) {
-        if (index+1 >= $(".img-container").children().length){
-          index = -1;
-        }
-        src = $(".img-container").children().eq(index+1).attr("src");
-      }
-      index += 1;
-    })
-
-    $("#overlay-img").attr("src", src)
-  });  
+  $("#next").on("click", next());  
 });
 
 $(document).ready(function(){
-  $("#prev").on("click", function() {
-    var src = $(this).attr("src");
-    var index = 0;
-    $(".img-container").children().each(function () {
-      if($(this).attr("src") == $("#overlay-img").attr("src")) {
-        src = $(".img-container").children().eq(index-1).attr("src");
-      }
-      index += 1;
-    })
-
-    $("#overlay-img").attr("src", src)
-  });  
+  $("#prev").on("click", prev());  
 });
 
 function myFunction() {
@@ -66,4 +41,57 @@ function myFunction() {
   } else {
     x.className = "";
   }
+}
+
+$(document).keydown(function (e) { 
+  // esc key press
+  if (e.keyCode == 27) {
+    $("#overlay").addClass("disable");
+    $("#overlay").removeClass("enable");
+  }
+  // right arrow
+  else if (e.keyCode == 39){
+    if($("#overlay").hasClass("enable")) {
+      next();
+    }
+  }
+  // left arrow
+  else if (e.keyCode == 37){
+    if($("#overlay").hasClass("enable")) {
+      prev();
+    }
+  }
+});
+
+// goes to the next image in the .img-container or 
+// loops back to the first
+function next() {
+  var src = $(this).attr("src");
+  var index = 0;
+  $(".img-container").children().each(function () {  
+    if($(this).attr("src") == $("#overlay-img").attr("src")) {
+      if (index+1 >= $(".img-container").children().length){
+        index = -1;
+      }
+      src = $(".img-container").children().eq(index+1).attr("src");
+    }
+    index += 1;
+  })
+
+  $("#overlay-img").attr("src", src)
+}
+
+// goes to the prev image in the .img-container or 
+// loops back to the last
+function prev() {
+  var src = $(this).attr("src");
+    var index = 0;
+    $(".img-container").children().each(function () {
+      if($(this).attr("src") == $("#overlay-img").attr("src")) {
+        src = $(".img-container").children().eq(index-1).attr("src");
+      }
+      index += 1;
+    })
+
+    $("#overlay-img").attr("src", src)
 }
