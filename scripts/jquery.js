@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
     $(".img-container img").on("click", function() {
       if($("#overlay").hasClass("enable")) {
@@ -26,10 +24,12 @@ $(document).ready(function(){
     });
 });
 
+// when .img-container next button is pressed
 $(document).ready(function(){
   $("#next").on("click", next());  
 });
 
+// when .img-container prev button is pressed
 $(document).ready(function(){
   $("#prev").on("click", prev());  
 });
