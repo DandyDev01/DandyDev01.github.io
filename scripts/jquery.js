@@ -26,6 +26,39 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+  $("#next").on("click", function() {
+    var src = $(this).attr("src");
+    var index = 0;
+    $(".img-container").children().each(function () {  
+      if($(this).attr("src") == $("#overlay-img").attr("src")) {
+        if (index+1 >= $(".img-container").children().length){
+          index = -1;
+        }
+        src = $(".img-container").children().eq(index+1).attr("src");
+      }
+      index += 1;
+    })
+
+    $("#overlay-img").attr("src", src)
+  });  
+});
+
+$(document).ready(function(){
+  $("#prev").on("click", function() {
+    var src = $(this).attr("src");
+    var index = 0;
+    $(".img-container").children().each(function () {
+      if($(this).attr("src") == $("#overlay-img").attr("src")) {
+        src = $(".img-container").children().eq(index-1).attr("src");
+      }
+      index += 1;
+    })
+
+    $("#overlay-img").attr("src", src)
+  });  
+});
+
 function myFunction() {
   var x = document.getElementById("menu");
   if (x.className === "") {

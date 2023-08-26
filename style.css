@@ -65,22 +65,37 @@ li#contact {
     background-color: #111;
   }
 
+  #next {
+    height: 500px;
+    position: relative;
+    bottom: 250px;
+  }
+
+  #prev {
+    height: 500px;
+    position: relative;
+    bottom: 250px;
+  }
+
   #close-button {
     font-size: 20px;
     width: 50px;
+    position: absolute;
+    right: 0px;
   }
 
   #overlay {
     position:absolute;
     top: 10%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(87, 63, 63, 0.8);
     margin-left: 20%;
     width: 60%;
     height: 70%;
+    border-radius: 15px;
   }
 
   #overlay img {
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 4%;
     width: 90%;
   }
@@ -142,7 +157,7 @@ li#contact {
      margin-left: 20%;
      margin-right: 20%;
      margin-top: 5%;
-     border-radius: 5px;
+     border-radius: 15px;
   }
 
   .content-right {
@@ -150,6 +165,7 @@ li#contact {
     position: fixed;
     right: 0;
     top: 0;
+    border-radius: 15px;
     margin-top: 5%;
     height: 85%;
     max-width: 16%;
@@ -235,3 +251,4 @@ li#contact {
     text-align: left;
   }
 }
+
