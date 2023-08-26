@@ -67,14 +67,18 @@ li#contact {
 
   #next {
     height: 500px;
+    width: 30px;
     position: relative;
     bottom: 250px;
+    font-size: 21px;
   }
 
   #prev {
     height: 500px;
+    width: 30px;
     position: relative;
     bottom: 250px;
+    font-size: 21px;
   }
 
   #close-button {
@@ -87,10 +91,10 @@ li#contact {
   #overlay {
     position:absolute;
     top: 10%;
-    background-color: rgba(87, 63, 63, 0.8);
-    margin-left: 20%;
-    width: 60%;
-    height: 70%;
+    background-color: rgba(0, 0, 0, 0.726);
+    margin-left: 10%;
+    width: 70%;
+    height: 80%;
     border-radius: 15px;
   }
 
