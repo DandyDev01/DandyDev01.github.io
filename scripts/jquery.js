@@ -26,12 +26,16 @@ $(document).ready(function(){
 
 // when .img-container next button is pressed
 $(document).ready(function(){
-  $("#next").on("click", next());  
+  $("#next").on("click", function() {
+    next();
+  });  
 });
 
 // when .img-container prev button is pressed
 $(document).ready(function(){
-  $("#prev").on("click", prev());  
+  $("#prev").on("click", function() {
+    prev();
+  });  
 });
 
 function myFunction() {
