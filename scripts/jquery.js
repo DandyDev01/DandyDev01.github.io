@@ -1,3 +1,4 @@
+// active and hide the image overlay
 $(document).ready(function(){
     $(".img-container img").on("click", function() {
       if($("#overlay").hasClass("enable")) {
@@ -47,6 +48,7 @@ function myFunction() {
   }
 }
 
+// handle keyboard input
 $(document).keydown(function (e) { 
   // esc key press
   if (e.keyCode == 27) {
