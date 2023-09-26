@@ -17,11 +17,42 @@ $(document).ready(function(){
         var src = $(this).attr("src");
         $("#overlay-img").attr("src", src);
       }
+
+      // reset active image
+      var index = 0;
+      $(".current_image_container").children().each(function () {
+        $(".current_image_container").children().eq(index).removeClass("active-image");
+        index += 1;
+      });
+
+      // set active image to clicked image
+      var index = 0;
+      $(".img-container").children().each(function () {  
+        if($(this).attr("src") == $("#overlay-img").attr("src")) {
+          // loop back to start
+          if (index+1 >= $(".img-container").children().length){
+            index = -1;
+          }
+    
+          $(".current_image_container").children().eq(index).addClass("active-image");
+          
+        }
+        index += 1;
+      })
+      
     });  
 
     $("#close-button").on("click", function() {
       $("#overlay").addClass("disable");
       $("#overlay").removeClass("enable");
+
+      // reset active image
+      var index = 0;
+      $(".current_image_container").children().each(function () {
+        $(".current_image_container").children().eq(index).removeClass("active-image");
+        index += 1;
+      });
+      $(".current_image_container").children().eq(0).addClass("active-image");
     });
 });
 
@@ -76,9 +107,13 @@ function next() {
   var index = 0;
   $(".img-container").children().each(function () {  
     if($(this).attr("src") == $("#overlay-img").attr("src")) {
+      // loop back to start
       if (index+1 >= $(".img-container").children().length){
         index = -1;
       }
+
+      $(".current_image_container").children().eq(index).removeClass("active-image");
+      $(".current_image_container").children().eq(index+1).addClass("active-image");
       src = $(".img-container").children().eq(index+1).attr("src");
     }
     index += 1;
