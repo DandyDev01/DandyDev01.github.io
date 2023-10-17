@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(65, 63, 63, 0.966);
+    background-color: rgb(44, 45, 44);
   }
   
 img {
@@ -7,7 +7,11 @@ img {
 }
 
 a {
-  color: dodgerblue;
+  color: rgb(234, 113, 0)
+}
+
+a:visited {
+  color: rgb(26, 145, 117);
 }
 
 ul {
@@ -23,13 +27,14 @@ ul {
 }
 
 button {
-  background-color: dodgerblue;
-  color: white;
+  background-color: rgb(234, 113, 0);
+  color: rgb(219, 219, 219);
   border-radius: 20px;
 }
 
 button:hover {
   cursor: pointer;
+  background: rgb(26, 145, 117);
 }
 
 div.content ul {
@@ -51,9 +56,9 @@ li#contact {
   float: right;
 }
 
-  li a {
+  ul#menu li a {
     display: block;
-    color: white;
+    color: rgb(219, 219, 219);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -61,7 +66,7 @@ li#contact {
 
   li div.dropdown {
     display: block;
-    color: white;
+    color: rgb(219, 219, 219);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -69,27 +74,32 @@ li#contact {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: rgb(26, 145, 117);
   }
 
   #next {
+    margin-top: 50px;
     height: 500px;
-    width: 30px;
+    width: 40px;
     position: relative;
     font-size: 21px;
+    border: none;
   }
 
   #prev {
+    margin-top: 50px;
     height: 500px;
-    width: 30px;
+    width: 40px;
     position: relative;
-    ;
     font-size: 21px;
+    border: none;
   }
 
   #close-button {
     font-size: 20px;
     width: 50px;
+    border: none;
+    margin-right: 30px;
   }
 
   #overlay {
@@ -101,7 +111,7 @@ li#contact {
     height: auto;
     border-radius: 15px;
     padding: 20px;
-    color: lightgray;
+    color: rgb(219, 219, 219);
   }
 
   #overlay img {
@@ -146,7 +156,7 @@ li#contact {
   }
 
   .active {
-    background-color: dodgerblue;
+    background-color: rgb(234, 113, 0);
   }
 
   .dropdown {
@@ -157,7 +167,7 @@ li#contact {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgb(219, 219, 219);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -171,7 +181,7 @@ li#contact {
   .Title {
     font-size: 50px;
     text-align: center;
-    color: dodgerblue;
+    color: rgb(234, 113, 0);
     padding-bottom: 20px;
   }
 
@@ -181,7 +191,7 @@ li#contact {
 
   .content {
      background-color: #333;
-     color: white;
+     color: rgb(219, 219, 219);
      padding: 5%;
      margin-left: 20%;
      margin-right: 20%;
@@ -214,7 +224,7 @@ li#contact {
 }
 
 .status-complete {
-  color: dodgerblue;
+  color: rgb(234, 113, 0);
 }
 
 .img-container {
@@ -239,7 +249,7 @@ li#contact {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .col-1 {width: 8.33%;}
