@@ -37,6 +37,11 @@ button:hover {
   background: rgb(26, 145, 117);
 }
 
+a.Title {
+  color: rgb(234, 113, 0);
+  text-decoration: underline;
+}
+
 div.content ul {
   position: relative;
 }
