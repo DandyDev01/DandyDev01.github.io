@@ -54,6 +54,10 @@ $(document).ready(function(){
       });
       $(".current_image_container").children().eq(0).addClass("active-image");
     });
+
+    $(".dropdown").on("click", function() {
+      $(".dropdown-content").css({"display": "block"});
+    });
 });
 
 // when .img-container next button is pressed
@@ -140,6 +144,14 @@ function prev() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.menu')) {
-    
+    // $(".dropdown-content").css({
+    //   "display": "none",
+    //   "position": "absolute",
+    //   "background-color": "rgb(219, 219, 219)",
+    //   "min-width": "160px",
+    //   "box-shadow": "0px 8px 16px 0px rgba(0,0,0,0.2)",
+    //   "padding": "12px 16px",
+    //   "z-index": "1"
+    // });
   }
 }
