@@ -64,7 +64,7 @@ $(document).ready(function(){
 });
 
 // when .img-container prev button is pressed
-$(document).ready(function(){
+$(document).ready(function(){ 
   $("#prev").on("click", function() {
     prev();
   });  
