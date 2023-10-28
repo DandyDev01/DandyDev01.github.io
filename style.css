@@ -282,6 +282,13 @@ li a:hover {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #menu li:not(:first-child) {display: inline;}
+  #menu li.icon {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1664px) {
   .content-right {
     position: relative;

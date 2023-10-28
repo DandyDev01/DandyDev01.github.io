@@ -71,11 +71,11 @@ $(document).ready(function(){
 });
 
 function myFunction() {
-  var x = document.getElementById("menu");
-  if (x.className === "") {
-    x.className += "responsive";
+  var menu = document.getElementById("menu");
+  if (menu.className === "") {
+    menu.className += "responsive";
   } else {
-    x.className = "";
+    menu.className = "";
   }
 }
 
@@ -135,4 +135,11 @@ function prev() {
     })
 
     $("#overlay-img").attr("src", src)
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.menu')) {
+    
+  }
 }
