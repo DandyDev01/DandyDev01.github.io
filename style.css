@@ -274,6 +274,7 @@ li a:hover {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+/* only show the hamburger menu and about button */
 @media screen and (max-width: 600px) {
   #menu li:not(:first-child) {display: none;}
   #menu li.icon {
@@ -282,6 +283,7 @@ li a:hover {
   }
 }
 
+/* stop showing the hamburger menu and show all nav elements */
 @media screen and (min-width: 600px) {
   #menu li:not(:first-child) {display: inline;}
   #menu li.icon {
