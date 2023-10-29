@@ -216,7 +216,7 @@ li a:hover {
   border-radius: 15px;
   margin-top: 5%;
   height: 85%;
-  max-width: 300px;
+  width: 300px;
   overflow-y: scroll;
 }
 
@@ -294,16 +294,18 @@ li a:hover {
 @media screen and (max-width: 1664px) {
   .content-right {
     position: relative;
-    max-width: 900px;
-    height: auto;
+    width: 900px;
     padding: 5%;
     margin: auto;
     margin-top: 50px;
+    z-index: -1;
   }
 
   .img-container img {
     float: left;
-    width: 50%;
+    display: inline;
+    width: 45%;
+    margin-top: 10px;
   }
 }
 
