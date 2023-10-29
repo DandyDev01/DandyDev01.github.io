@@ -56,7 +56,9 @@ $(document).ready(function(){
     });
 
     $(".dropdown").on("click", function() {
-      $(".dropdown-content").css({"display": "block"});
+      $(".dropdown-content").css({
+        "display": "block"
+      });
     });
 });
 
