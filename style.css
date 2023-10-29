@@ -258,7 +258,7 @@ li a:hover {
   width: 100%;
 }
 
-.project_piece p:nth-child(3) {
+.project_piece div:nth-child(3) {
   grid-row: 2;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -302,7 +302,7 @@ li a:hover {
     width:100%;
   }
 
-  .project_piece p:nth-child(3) {
+  .project_piece div:nth-child(3) {
     grid-row:3;
     width:100%;
   }
