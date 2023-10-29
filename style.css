@@ -14,7 +14,7 @@ a:visited {
   color: rgb(26, 145, 117);
 }
 
-ul {
+header nav ul {
   position: fixed;
   top: 0;
   Left: 0;
@@ -248,7 +248,23 @@ li a:hover {
 .img-container img:hover {
   cursor: pointer;
 }
-  
+
+.project_piece {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.project_piece img {
+  width: 100%;
+}
+
+.project_piece p:nth-child(3) {
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  width: 100%;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -273,6 +289,24 @@ li a:hover {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+/* project piece */
+@media screen and (max-width: 950px) {
+  .project_piece {
+    display: grid;
+    grid-template-columns: 1fr
+  }
+  
+  .project_piece div:nth-child(2) {
+    grid-row: 2;
+    width:100%;
+  }
+
+  .project_piece p:nth-child(3) {
+    grid-row:3;
+    width:100%;
+  }
+}
 
 /* only show the hamburger menu and about button */
 @media screen and (max-width: 600px) {
