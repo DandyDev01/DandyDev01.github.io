@@ -175,6 +175,19 @@ li div.dropdown {
   overflow-y: scroll;
 }
 
+.img-container {
+  margin-top: 5%;
+}
+
+.img-container img {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.img-container img:hover {
+  cursor: pointer;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -208,7 +221,6 @@ li div.dropdown {
 
 .scroller {
   width: 300px;
-  height: 100px;
   overflow-y: scroll;
   scrollbar-color: rgb(0, 0, 0) rgb(95, 97, 95);
   scrollbar-width: thin;
@@ -241,19 +253,6 @@ li div.dropdown {
 
 .status-complete {
   color: rgb(234, 113, 0);
-}
-
-.img-container {
-  margin-top: 5%;
-}
-
-.img-container img {
-  margin-left: 5%;
-  width: 90%;
-}
-
-.img-container img:hover {
-  cursor: pointer;
 }
 
 .project_piece {
@@ -297,6 +296,25 @@ li div.dropdown {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+@media screen and (max-width: 1664px) {
+  .content-right {
+    position: relative;
+    width: 900px;
+    padding: 5%;
+    margin: auto;
+    margin-top: 50px;
+    z-index: -1;
+  }
+
+  .img-container img {
+    float: left;
+    display: inline;
+    width: 45%;
+    margin-top: 10px;
+  }
+}
+
+
 /* project piece */
 @media screen and (max-width: 950px) {
   .project_piece {
@@ -322,35 +340,7 @@ li div.dropdown {
     float: right;
     display: block;
   }
-}
 
-/* stop showing the hamburger menu and show all nav elements */
-@media screen and (min-width: 600px) {
-  #menu li:not(:first-child) {display: inline;}
-  #menu li.icon {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1664px) {
-  .content-right {
-    position: relative;
-    width: 900px;
-    padding: 5%;
-    margin: auto;
-    margin-top: 50px;
-    z-index: -1;
-  }
-
-  .img-container img {
-    float: left;
-    display: inline;
-    width: 45%;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
   #menu.responsive .icon {
     position: absolute;
     right: 0;
@@ -363,3 +353,10 @@ li div.dropdown {
   }
 }
 
+/* stop showing the hamburger menu and show all nav elements */
+@media screen and (min-width: 600px) {
+  #menu li:not(:first-child) {display: inline;}
+  #menu li.icon {
+    display: none;
+  }
+}
