@@ -42,6 +42,7 @@ $(document).ready(function(){
       
     });  
 
+    // when image view close button clicked
     $("#close-button").on("click", function() {
       $("#overlay").addClass("disable");
       $("#overlay").removeClass("enable");
@@ -55,6 +56,7 @@ $(document).ready(function(){
       $(".current_image_container").children().eq(0).addClass("active-image");
     });
 
+    // when elements with dropdown class are clicked
     $(".dropdown").on("click", function() {
       $(".dropdown-content").css({
         "display": "block"
@@ -76,15 +78,6 @@ $(document).ready(function(){
   });  
 });
 
-function dropDownFunction() {
-  var menu = document.getElementById("menu");
-  if (menu.className === "") {
-    menu.className += "responsive";
-  } else {
-    menu.className = "";
-  }
-}
-
 // handle keyboard input
 $(document).keydown(function (e) { 
   // esc key press
@@ -105,6 +98,16 @@ $(document).keydown(function (e) {
     }
   }
 });
+
+function dropDownFunction() {
+  var menu = document.getElementById("menu");
+  if (menu.className === "") {
+    menu.className += "responsive";
+  } else {
+    menu.className = "";
+  }
+}
+
 
 // goes to the next image in the .img-container or 
 // loops back to the first
