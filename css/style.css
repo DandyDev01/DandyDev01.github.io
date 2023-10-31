@@ -40,6 +40,10 @@ button {
   background-color: rgb(234, 113, 0);
   color: rgb(219, 219, 219);
   border-radius: 20px;
+  font-size: 20px;
+  width: 50px;
+  border: none;
+  margin-right: 30px;
 }
 
 button:hover {
@@ -56,27 +60,8 @@ div.content ul {
   position: relative;
 }
 
-#menu li {
-  float: left;
-}
-
-#overlay img#overlay-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
 li#contact {
   float: right;
-}
-
-ul#menu li a {
-  display: block;
-  color: rgb(219, 219, 219);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 li div.dropdown {
@@ -87,29 +72,16 @@ li div.dropdown {
   text-decoration: none;
 }
 
-#next {
-  margin-top: 50px;
-  height: 500px;
-  width: 40px;
-  position: relative;
-  font-size: 21px;
-  border: none;
+ul#menu li a {
+  display: block;
+  color: rgb(219, 219, 219);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-#prev {
-  margin-top: 50px;
-  height: 500px;
-  width: 40px;
-  position: relative;
-  font-size: 21px;
-  border: none;
-}
-
-#close-button {
-  font-size: 20px;
-  width: 50px;
-  border: none;
-  margin-right: 30px;
+#menu li {
+  float: left;
 }
 
 #overlay {
@@ -132,6 +104,31 @@ li div.dropdown {
   margin-left: 2%;
   margin-top: 4%;
   width: 100%;
+}
+
+#overlay img#overlay-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#next {
+  margin-top: 50px;
+  height: 500px;
+  width: 40px;
+  position: relative;
+  font-size: 21px;
+  border: none;
+}
+
+#prev {
+  margin-top: 50px;
+  height: 500px;
+  width: 40px;
+  position: relative;
+  font-size: 21px;
+  border: none;
 }
 
 .active {
@@ -215,7 +212,6 @@ li div.dropdown {
   position: absolute;
   right: 0px;
   width: 300px;
-  border: 3px solid #73AD21;
   padding: 10px;
 }
 
@@ -238,7 +234,6 @@ li div.dropdown {
   padding-bottom: 20px;
 }
 
-
 .status-paused {
   color: darkorange;
 }
@@ -260,6 +255,10 @@ li div.dropdown {
   grid-template-columns: 2fr 3fr;
 }
 
+.project_piece a.Title:hover {
+  transform: translateY(-10px);
+}
+
 .project_piece img {
   width: 100%;
 }
@@ -272,10 +271,10 @@ li div.dropdown {
   right: 0;
   bottom: 0;
   width: 70%;
-  height: 75%;
+  height: auto;
+  padding: 20px;
   position:absolute;
   margin: auto;
-  padding: 20px;
 }
 
 .project_piece div:nth-child(3) {
@@ -328,7 +327,6 @@ li div.dropdown {
   }
 }
 
-
 /* project piece */
 @media screen and (max-width: 950px) {
   .project_piece {
@@ -373,4 +371,5 @@ li div.dropdown {
   #menu li.icon {
     display: none;
   }
+
 }

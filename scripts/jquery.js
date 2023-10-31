@@ -76,7 +76,7 @@ $(document).ready(function(){
   });  
 });
 
-function myFunction() {
+function dropDownFunction() {
   var menu = document.getElementById("menu");
   if (menu.className === "") {
     menu.className += "responsive";
