@@ -264,6 +264,20 @@ li div.dropdown {
   width: 100%;
 }
 
+.project_piece img:hover {
+  border-radius: 15px;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 75%;
+  position:absolute;
+  margin: auto;
+  padding: 20px;
+}
+
 .project_piece div:nth-child(3) {
   grid-row: 2;
   grid-column-start: 1;
