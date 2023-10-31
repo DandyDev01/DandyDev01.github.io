@@ -1,6 +1,6 @@
 body{
     background-color: rgb(44, 45, 44);
-  }
+}
   
 img {
   width: 60%;
@@ -80,6 +80,8 @@ ul#menu li a {
   text-decoration: none;
 }
 
+/* ================== ID'S ==================== */
+
 #menu li {
   float: left;
 }
@@ -130,6 +132,8 @@ ul#menu li a {
   font-size: 21px;
   border: none;
 }
+
+/* ================== CLASSES ==================== */
 
 .active {
   background-color: rgb(234, 113, 0);
@@ -222,11 +226,6 @@ ul#menu li a {
   scrollbar-width: thin;
 }
 
-/* 
-.dropdown:hover .dropdown-content {
-  display: block;
-} */
-
 .Title {
   font-size: 50px;
   text-align: center;
@@ -283,6 +282,8 @@ ul#menu li a {
   grid-column-end: 5;
   width: 100%;
 }
+
+/* ========= RESPONSIVE DESIGN ========= */
 
 .row::after {
   content: "";
