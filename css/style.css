@@ -282,7 +282,7 @@ ul#menu li a {
 }
 
 .project_piece img:hover {
-  transform: scale(1.5);
+  transform: scale(2.5);
 }
 
 .project_piece div:nth-child(3) {
