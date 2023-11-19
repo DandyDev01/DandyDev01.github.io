@@ -26,9 +26,14 @@ header nav ul {
   background-color: #333;
 }
 
+header nav li a, header nav li span {
+  transition: transform 0.2s;
+}
+
 /* Change the link color to #111 (black) on hover */
-header nav li a:hover {
+header nav li a:hover, header nav li span:hover {
   background-color: rgb(26, 145, 117);
+  transform: scale(1.5);
 }
 
 header nav div.dropdown:hover {
@@ -44,6 +49,15 @@ button {
   width: 50px;
   border: none;
   margin-right: 30px;
+}
+
+button a {
+  text-decoration: None;
+  color: white;
+}
+
+button a:visited {
+  color: white;
 }
 
 button:hover {
@@ -260,20 +274,11 @@ ul#menu li a {
 
 .project_piece img {
   width: 100%;
+  transition: transform 0.2s
 }
 
 .project_piece img:hover {
-  border-radius: 15px;
-  padding: 0px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 70%;
-  height: auto;
-  padding: 20px;
-  position:absolute;
-  margin: auto;
+  transform: scale(1.5);
 }
 
 .project_piece div:nth-child(3) {
