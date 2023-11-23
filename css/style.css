@@ -361,11 +361,27 @@ ul#menu li a {
     z-index: -1;
   }
 
+  .content-left {
+    max-width: 200px;
+  }
+
   .img-container img {
     float: left;
     display: inline;
     width: 45%;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1436px) {
+  .content-left {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 1436px) {
+  .content-left {
+   display: none;
   }
 }
 
