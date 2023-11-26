@@ -65,6 +65,7 @@
 
 <div class="content">
     <h1 class="Title">DM Tools</h1>
+    <h3>About</h3>
     <p>
         This is a project made with WPF. It functions the same as 
         <a href="Character_Manager.html"> Character Manager</a>.
@@ -77,6 +78,73 @@
         This was the second project I made in WPF so my main focus here was the
         design of the UI and to make effective use of my white space.
     </p>
+    <p>
+        The reason I created this program was because my DM was using discord
+        to keep track of things. Sure there are other systems out there, but
+        I wanted to create something.
+    </p>
+    <hr>
+
+    <h3>User Interface Design Process</h3>
+    <p>
+        The first step I took was to define what the problem I was trying 
+        to solve was - Keeping track of combat encounters in D&D 5e.
+        <br>
+        With that out of the way, it was time for some requirements gathering. 
+    </p>
+    <ul>
+        <li>A way to keep track of initiative.</li>
+        <li>
+            Easy access to NPC and PC information relevant to combat.
+            <ul>
+                <li>Health.</li>
+                <li>Armor Class.</li>
+                <li>Conditions.</li>
+                <li>Movement Speed.</li>
+                <li>Attacks.</li>
+                <li>General Stats.</li>
+            </ul>
+        </li>
+        <li>Way to add monsters to the encounter.</li>
+        <li>Way to create encounters.</li>
+        <li>etc.</li>
+    </ul>
+    <p>
+        After gathering the requirements I made a mockup for the for the user
+        interface in Visual Studio with XAML. TO BE CONTINUED.
+    </p>
+
+    <hr>
+
+    <h3>Software Design Process</h3>
+    <p>
+        Because I was creating the system with Windows Presentation Foundation 
+        (WPF), I already knew it would be using the Model, View, View Model 
+        (MVVM) design pattern. The biggest thing I needed to figure out was
+        how to handle having players, monster stat blocks, and Nonplayer 
+        characters. I chose to use a combination of inheritance and composition,
+        this let me get the best of both worlds. Composition removed large
+        inheritance trees and a one to two layers of inheritance removed
+        lots of duplicate code.
+    </p>
+
+    <hr>
+    <h3>Putting it All Together</h3>
+    <p>
+        Now that I had a mocked UI and knew what the systems architecture would
+        look like I was able to put together an early Alpha version of the 
+        program. 
+    </p>
+
+    <hr>
+
+    <h3>Next Steps</h3>
+    <p>
+        The next steps for the program are to design and test a final version
+        of the user interface. This is now the center piece of the program
+        as having an easy to use interface key.
+    </p>
+
     <hr>
     <p>development status: <span class="status-paused">Paused</span></p>
    
@@ -93,9 +161,7 @@
 
 <div id="overlay" class="disable">
     <button id="close-button" class="right">X</button>
-    <div class="row">
-    </div>
-    <div class="row">
+    <div >
         <button id="prev">
             '<'
         </button>
