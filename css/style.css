@@ -32,7 +32,7 @@ header nav li a /*, header nav li div.dropdown*/ {
 }
 
 /* Change the link color to #111 (black) on hover */
-header nav li a:hover/*, header nav li div.dropdown:hover*/ {
+header nav li a:hover, div.content-left a:hover/*, header nav li div.dropdown:hover*/ {
   background-color: rgb(26, 145, 117);
   transform: scale(1.5);
 }
@@ -222,6 +222,7 @@ ul#menu li a {
   height: 85%;
   width: 300px;
   padding: 0px;
+  overflow: hidden;
 }
 
 .content-left h3 {
@@ -235,12 +236,22 @@ ul#menu li a {
   text-align: center;
   text-decoration: none;
   padding: 10px;
+  transition: transform 0.2s;
 }
 
 .content-left #project_links a:hover {
   background-color: rgb(26, 145, 117);
 }
 
+.sideBySideImg {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+}
+
+.sideBySideImg img {
+  margin: 10px;
+  width: 95%;
+}
 
 .img-container {
   margin-top: 5%;
