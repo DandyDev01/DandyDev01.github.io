@@ -49,7 +49,7 @@ button {
   font-size: 20px;
   width: 50px;
   border: none;
-  margin-right: 30px;
+  transition: transform 0.2s;
 }
 
 button a {
@@ -64,6 +64,7 @@ button a:visited {
 button:hover {
   cursor: pointer;
   background: rgb(26, 145, 117);
+  transform: scale(1.5);
 }
 
 a.Title {
@@ -103,13 +104,12 @@ ul#menu li a {
 
 #overlay {
   border-radius: 15px;
-  padding: 0px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 70%;
-  height: 75%;
+  height: 90%;
   position:absolute;
   margin: auto;
   padding: 20px;
@@ -119,8 +119,9 @@ ul#menu li a {
   grid-template-columns: 1fr;
 }
 
-#overlay button:nth-child(1) {
-  grid-row: 1;
+#overlay div:nth-child(1) {
+  grid-row: 0;
+  height: 70px;
 }
 
 #overlay div:nth-child(2) {
@@ -128,26 +129,26 @@ ul#menu li a {
   display: flex;
 }
 
-#overlay div:nth-child(2) {
-  max-width: 100%;
-  margin: auto;
-  grid-row: 2;
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-}
-
 #overlay div:nth-child(3) {
   grid-row: 3;
+  width: 100%;
 }
 
 #overlay img#overlay-img {
   width: 100%;
+  margin: 20px;
 }
 
-#next, #prev {
-  height: 500px;
-  width: 40px;
-  font-size: 21px;
+#close-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#prev, #next {
+  height: 400px;
+  margin-top: 150px;
 }
 
 #back {
@@ -382,7 +383,7 @@ ul#menu li a {
   }
 
   #overlay {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -394,6 +395,10 @@ ul#menu li a {
 
 /* project piece */
 @media screen and (max-width: 950px) {
+  .content-right {
+    width: 90%;
+  }
+
   .project_piece {
     display: grid;
     grid-template-columns: 1fr
