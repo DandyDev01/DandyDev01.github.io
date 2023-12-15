@@ -64,7 +64,7 @@ button a:visited {
 button:hover {
   cursor: pointer;
   background: rgb(26, 145, 117);
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 a.Title {
@@ -147,8 +147,8 @@ ul#menu li a {
 }
 
 #prev, #next {
-  height: 400px;
-  margin-top: 150px;
+  height: 600px;
+  margin-top: 50px;
 }
 
 #back {
@@ -338,11 +338,11 @@ ul#menu li a {
 
 .project_piece img {
   width: 100%;
-  transition: transform 0.2s
+  transition: transform 0.2s;
 }
 
 .project_piece img:hover {
-  transform: scale(2);
+  transform: scale(1.7) translateX(-100px) translateY(10px);
 }
 
 .project_piece div:nth-child(3) {
@@ -412,6 +412,10 @@ ul#menu li a {
   .project_piece div:nth-child(3) {
     grid-row:3;
     width:100%;
+  }
+
+  .project_piece img:hover {
+    transform: scale(1);
   }
 }
 
