@@ -147,6 +147,12 @@ h1.Title {
   float: left;
 }
 
+#Education {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 #overlay {
   border-radius: 15px;
   top: 0;
