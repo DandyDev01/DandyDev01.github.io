@@ -97,6 +97,10 @@ ul#menu li a {
   text-decoration: none;
 }
 
+h1.Title {
+  text-align: left;
+}
+
 /* ================== ID'S ==================== */
 
 #menu li {
