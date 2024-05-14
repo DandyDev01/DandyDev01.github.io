@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(44, 45, 44);
+    background-color: rgb(26, 25, 25);
     color: rgb(219, 219, 219);
     font-family: Sans-serif;
   }
@@ -16,16 +16,23 @@ a:visited {
   color: rgb(26, 145, 117);
 }
 
+
+
 header nav ul {
   position: fixed;
-  top: 0;
-  Left: 0;
-  width: 100%;
+  border-radius: 50px;
+  top: 5%;
+  Left: 25%;
+  width: 50%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #1d1d1d;
+}
+
+head nav ul li {
+  align-content: center;
 }
 
 header nav li a /*, header nav li div.dropdown*/ { 
@@ -71,10 +78,6 @@ button:hover {
 a.Title {
   color: rgb(234, 113, 0);
   text-decoration: underline;
-}
-
-div.content ul {
-  position: relative;
 }
 
 li#contact {
@@ -194,13 +197,14 @@ h1.Title {
 }
 
 .content {
-  background-color: #333;
+  background-color: #1d1d1d;
   color: rgb(219, 219, 219);
   border-radius: 15px;
   max-width: 900px;
   padding: 5%;
+  padding-top: 5%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 7%;
 }
 
 .content-right {
