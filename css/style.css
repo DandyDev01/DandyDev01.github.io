@@ -133,13 +133,9 @@ h1.Title {
 
 /* ================== ID'S ==================== */
 
-#back_to_top {
-  width: 100px;
-}
-
 #back_to_top img {
   width: 100px;
-  padding-left:300px;
+  padding-left: 300px;
 }
 
 
@@ -465,6 +461,7 @@ h1.Title {
   .project_piece img:hover {
     transform: scale(1);
   }
+  
 }
 
 /* only show the hamburger menu and about button */
@@ -485,6 +482,16 @@ h1.Title {
     display: block;
     text-align: left;
   }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  #back_to_top img {
+    width: 100px;
+    padding: 0%;
+  }
+
 }
 
 /* stop showing the hamburger menu and show all nav elements */
