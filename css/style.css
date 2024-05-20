@@ -147,7 +147,7 @@ h1.Title {
   float: left;
 }
 
-#Education {
+#skills {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
