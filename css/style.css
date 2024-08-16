@@ -1,8 +1,10 @@
-body{
+body {
     background-color: #212222;
+    /* background-image: url("../img/blue_print_background.jpg"); */
     color: rgb(219, 219, 219);
     font-family: Sans-serif;
-  }
+    margin: 0%;
+}
   
 img {
   width: 60%;
@@ -247,6 +249,9 @@ a#back_to_top:hover {
   padding-top: 5%;
   margin: auto;
   margin-top: 7%;
+
+  /* padding: 10% 20%;
+  background: linear-gradient(0deg, rgba(33,34,34,1) 65%, rgba(112,112,112,0) 100%);  */
 }
 
 .content-right {
