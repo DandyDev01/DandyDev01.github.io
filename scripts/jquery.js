@@ -79,6 +79,13 @@ $(document).ready(function(){
   });  
 });
 
+$(document).ready(function(){
+  $('#back_to_top').click(function(){
+      $('html, body').animate({scrollTop: 0}, 'slow');
+      return false;
+  });
+});
+
 // handle keyboard input
 $(document).keydown(function (e) { 
   // esc key press

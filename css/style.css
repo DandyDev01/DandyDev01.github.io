@@ -131,6 +131,10 @@ h1.Title {
   text-align: left;
 }
 
+a#back_to_top:hover {
+  cursor: pointer;
+}
+
 /* ================== ID'S ==================== */
 
 #back_to_top img {
