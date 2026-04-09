@@ -1,9 +1,17 @@
+:root {
+  --background-color-light: #d8d8d8;
+  --foreground-color-light: #3b3b3b;
+  --button-primary-color-light: #008cff;
+  --link-color-light: #008cff;
+  --link-visited-color-light: #034d8a;
+  --font: Sans-serif;
+}
+
 body {
-    background-color: #212222;
+    background-color: white;
     /* background-image: url("../img/blue_print_background.jpg"); */
-    color: rgb(219, 219, 219);
-    font-family: Sans-serif;
-    margin: 0%;
+    color: var(--foreground-color-light);
+    font-family: var(--font);
 }
   
 img {
@@ -11,18 +19,18 @@ img {
 }
 
 a {
-  color: rgb(234, 113, 0)
+  color: var(--link-color-light)
 }
 
 a:visited {
-  color: rgb(26, 145, 117);
+  color: var(--link-visited-color-light);
 }
 
 hr {
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 50%;
-  color: rgb(234, 113, 0)
+  color: var(--button-primary-color-light)
 }
 
 header nav ul {
@@ -39,7 +47,7 @@ header nav ul {
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
-  background-color: rgb(234, 113, 0)
+  background-color: var(--button-primary-color-light)
 }
 
 head nav ul li {
@@ -51,7 +59,7 @@ header nav li a /*, header nav li div.dropdown*/ {
 }
 
 /* Change the link color to #111 (black) on hover */
-header nav li a:hover, div.content-left a:hover/*, header nav li div.dropdown:hover*/ {
+header nav li:not(.active) a:hover, div.content-left a:hover/*, header nav li div.dropdown:hover*/ {
   transform: scale(1.5);
 }
 
@@ -65,7 +73,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 75px;
-  background-color: rgb(64, 64, 66);
+  background-color: var(--background-color-light);
 }
 
 footer ul {
@@ -80,8 +88,8 @@ footer ul li a {
 
 
 button {
-  background-color: rgb(234, 113, 0);
-  color: rgb(219, 219, 219);
+  background-color: var(--button-primary-color-light);
+  color: var(--foreground-color-light);
   border-radius: 20px;
   font-size: 20px;
   width: 50px;
@@ -100,12 +108,12 @@ button a:visited {
 
 button:hover {
   cursor: pointer;
-  background: rgb(26, 145, 117);
+  background: var(--link-visited-color-light);
   transform: scale(1.2);
 }
 
 a.Title {
-  color: rgb(234, 113, 0);
+  color: var(--button-primary-color-light);
   text-decoration: underline;
 }
 
@@ -223,7 +231,13 @@ a#back_to_top:hover {
 /* ================== CLASSES ==================== */
 
 .active {
-  background-color: rgb(201, 99, 3);
+  background-color: var(--link-visited-color-light);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.active:hover {
+  scale: 1.2;
 }
 
 .active-image {
@@ -242,13 +256,14 @@ a#back_to_top:hover {
 }
 
 .content {
-  color: rgb(219, 219, 219);
   border-radius: 15px;
   max-width: 900px;
   padding: 5%;
   padding-top: 5%;
   margin: auto;
-  margin-top: 7%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: var(--background-color-light);
 
   /* padding: 10% 20%;
   background: linear-gradient(0deg, rgba(33,34,34,1) 65%, rgba(112,112,112,0) 100%);  */
@@ -360,7 +375,7 @@ a#back_to_top:hover {
 .Title {
   font-size: 50px;
   text-align: center;
-  color: rgb(234, 113, 0);
+  color: var(--button-primary-color-light);
   padding-bottom: 20px;
 }
 
