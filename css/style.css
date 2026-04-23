@@ -19,7 +19,7 @@ img {
 }
 
 a {
-  color: var(--link-color-light)
+  color: var(--link-color-light);
 }
 
 a:visited {
@@ -38,7 +38,7 @@ header nav ul {
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 50%;
 
   border-radius: 50px;
   list-style: none;
@@ -94,13 +94,13 @@ button {
   color: var(--foreground-color-light);
   border-radius: 20px;
   font-size: 20px;
-  width: 50px;
+  padding: 0.5rem;
   border: none;
   transition: transform 0.2s;
 }
 
 button a {
-  text-decoration: None;
+  text-decoration: none;
   color: white;
 }
 
@@ -516,6 +516,10 @@ a#back_to_top:hover {
   #back_to_top img {
     width: 100px;
     padding: 0%;
+  }
+
+  header nav ul {
+    width: 70%
   }
 
 }
