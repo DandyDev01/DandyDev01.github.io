@@ -35,19 +35,21 @@ hr {
 
 header nav ul {
   position: absolute;
-  border-radius: 50px;
   top: 5%;
-  Left: 25%;
-  width: 50%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+
+  border-radius: 50px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  overflow: hidden;
-  background-color: var(--button-primary-color-light)
+
+  background-color: var(--button-primary-color-light);
 }
 
 head nav ul li {
