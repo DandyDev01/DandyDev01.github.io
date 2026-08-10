@@ -107,6 +107,15 @@ $(document).keydown(function (e) {
   }
 });
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 function dropDownFunction() {
   var menu = document.getElementById("menu");
   if (menu.className === "") {

@@ -11,7 +11,7 @@
     <title>Kelsey's Portfolio | Projects</title>
 </head>
 <body> 
-    <header>
+    <header id="header_large">
       <nav>
         <ul id="menu">
           <li><a href="index.html">About</a></li>
@@ -25,11 +25,24 @@
         </ul>
       </nav>
     </header>
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="index.html">About</a>
+    <div id="myLinks">
+        <a href="experience.html">Experience</a>
+        <a href="Mywork.html" class="active">Projects</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
     <div class="content">
         <div class="project_piece">
             <div>
                 <h1 href="Character_Manager.html">PCManager</h1>
-                <h3>technologies used</h3>
+                <h3>Technologies Used</h3>
                 <ul>
                     <li>C#</li>
                     <li>XAML</li>
@@ -69,8 +82,45 @@
 
         <div class="project_piece">
             <div>
+                <h1 href="Character_Manager.html">PCManager Android</h1>
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Kotlin</li>
+                    <li>Jetpack Compose</li>
+                    <li>Android Studio</li>
+                </ul>
+                <!-- <button><a href="Character_Manager.html">Visit</a></button> -->
+            </div>
+            <div style="height: 400px; transform: scale(0.3);">
+                <img src="img/PCManager_Android.jpeg" alt="">
+            </div>
+            <div>
+                <h3>About</h3>
+                <p>
+                    A mobile application that runs on Android, it's purpose is
+                    to manage characters in table top RPGs. In its current state,
+                    there is support for Dungeons & Dragons 5e. Features in the program include, creating
+                    characters, taking notes, managing inventory, a spellbook, and more!
+                </p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Support for multiple table top character types (D&D, Starfinder, Darksouls)</li>
+                    <li>Inventory, spell, and note Management</li>
+                    <li>Character creation</li>
+                    <li>Modular item system</li>
+                </ul>
+                <button>
+                    <a href="https://github.com/DandyDev01/PCManagerAndroid">Github</a>
+                </button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="project_piece">
+            <div>
                 <h1 href="DMTools.html">DMTools</h1>
-                <h3>technologies used</h3>
+                <h3>Technologies Used</h3>
                 <ul>
                     <li>C#</li>
                     <li>XAML</li>
@@ -111,7 +161,7 @@
         <div class="project_piece">
             <div>
                 <h1 href="FarmKillPig.html">FKP</h1>
-                <h3>technologies used</h3>
+                <h3>Technologies Used</h3>
                 <ul>
                     <li>C#</li>
                     <li>Unity Game Engine</li>
@@ -152,7 +202,7 @@
         <div class="project_piece">
             <div>
                 <h1 href="Learn_Unity.html">Learn Unity</h1>
-                <h3>technologies used</h3>
+                <h3>Technologies Used</h3>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
